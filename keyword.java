@@ -3,7 +3,7 @@ class demo
     static int i=10;
     static void add()
     {
-        System.out.println("hello");
+        System.out.println("hello world");
     }
     static void inc()
     {

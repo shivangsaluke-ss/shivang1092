@@ -2,13 +2,13 @@
     public class type_casting {
 
         public static void main(String[] args) {
-            int a = 10;
-            double b = 0.5;
-            double c = a + b;
-            System.out.println(c);
-            int a = 10;
-            double b = a;
-            System.out.println(b);
-
+            // implict
+       int a=10;
+       int b=a;
+       System.out.println(b);
+       //  explict
+       int i=10, j=7;
+       float c=i/j;
+       System.out.println(c);
         }
     }

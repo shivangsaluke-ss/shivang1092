@@ -1,19 +1,31 @@
-class Parent {
-     void display() {
-final int a=89;
-System.out.println(a);
+
+// public class final_keyword{
+//     public static void main(String[] args) {
+//    final int a=20;
+//    System.out.println(a);
+//     }
+// }
+class A
+{
+     final void display()
+     {
+        System.out.println("hello world");
+     }
+
 }
-}
-final class child extends Parent {
-    // ❌ Error: Cannot override the final method from Parent
-    // void display() { 
-    //     System.out.println("Trying to override.");
-    // }
+class B
+{
+    void display()
+    {
+        System.out.println("hello world");
+    }
 }
 public class final_keyword
 {
     public static void main(String[] args) {
-        child d2=new child();
-        d2.display();
+        A a1=new A();
+        a1.display();
+        B b1=new B();
+        b1.display();
     }
 }
